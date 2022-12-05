@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+html {
+  color: white;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.work_card_mask {
+  opacity: 0;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.bg {
+  background-image: url(../image/pexels-min-an-689326.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -3;
+}
+
+.menu-toggler {
+  padding: 24px;
+  padding-top: 26px;
+}
+
+.menu-toggler span {
+  width: 32px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: white;
+}
+
+.menu-toggler:hover span:nth-child(1) {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+.menu-toggler:hover span:nth-child(3) {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.popup-menu {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10000000;
+}
+
+#popup-overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-menu_close {
+  width: 80px;
+  height: 80px;
+  padding: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.popup-menu_close:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.popup-menu_close span {
+  width: 34px;
+  height: 2px;
+}
+
+.popup-menu_close span:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup-menu_close span:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup-menu-item {
+  font-size: 2.5rem;
+  line-height: 200%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.popup-menu-item:hover {
+  color: black !important;
+}
+
+.arrow-up {
+  right: 2%;
+  bottom: 5%;
+  z-index: 10;
+}
+
+.arrow-up_img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-size {
+  width: 30px;
+  height: 30px;
+}
+
+.timeline-center {
+  width: 3px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 3px 3px 10px gray;
+          box-shadow: 3px 3px 10px gray;
+}
+
+.timeline-card {
+  width: calc(50% - 24px);
+  height: 150px;
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+}
+
+.timeline-card::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 3px 3px 10px gray;
+          box-shadow: 3px 3px 10px gray;
+}
+
+.timeline-cards:nth-child(even) > ::before {
+  right: -33px;
+}
+
+.timeline-cards:nth-child(odd) > ::before {
+  left: -33px;
+}
+
+.skill_card {
+  line-height: 2rem;
+  height: 300px;
+  padding: 30px 0px 0px 0px;
+  -webkit-box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px 15px;
+}
+
+.skill_card:hover {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.skill_h2 {
+  padding: 10px 0 5px 0;
+}
+
+.t-shadow {
+  text-shadow: 0.1em 0.1em gray;
+}
+
+.contact_card {
+  -webkit-box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+}
+
+.contact_card:hover {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.contact_card_model {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  padding: 10px;
+}
+
+.contact_card_inner {
+  width: 30px;
+  height: 30px;
+  margin: 30px 5px;
+}
+
+.contact_card_inner:hover {
+  background-color: #c0c0c0;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.contact_footer {
+  padding: 10px;
+}
+
+.work_card {
+  border: 5px solid black;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+}
+
+.work_card:hover .work_card_mask {
+  opacity: 1;
+  background: rgba(101, 101, 101, 0.6);
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.work_card::after {
+  content: "";
+  -webkit-box-shadow: 0px 50px 50px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 50px 50px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=all.css.map */
